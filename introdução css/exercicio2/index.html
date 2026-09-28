@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 02 - Background</title>
+
+    <style>
+
+        /* a) Página com fundo azul claro */
+        .fundo-azul-claro {
+            background-color: lightblue;
+        }
+
+        /* b) Parágrafo com fundo verde claro */
+        .paragrafo-verde-claro {
+            background-color: lightgreen;
+        }
+
+        /* c) Imagem repetindo em qualquer direção
+           e fixa durante o deslocamento da página */
+        .imagem-repetida-fixa {
+            background-image: url("imagem.jpg");
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+
+        /* d) Imagem repetida somente na vertical */
+        .imagem-vertical {
+            background-image: url("imagem.jpg");
+            background-repeat: repeat-y;
+        }
+
+        /* e) Imagem sem repetição */
+        .imagem-sem-repeticao {
+            background-image: url("imagem.jpg");
+            background-repeat: no-repeat;
+        }
+
+        /* f) Imagem sem repetição e centralizada */
+        .imagem-centralizada {
+            background-image: url("imagem.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* g) Fundo amarelo + imagem centralizada,
+           sem repetição e acompanhando o deslocamento */
+        .fundo-completo {
+            background-color: yellow;
+            background-image: url("imagem.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+        }
+
+        /* Apenas para deixar os exemplos organizados */
+        .exemplo {
+            min-height: 250px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Questão 02 - Propriedades de Background</h1>
+
+    <div class="exemplo fundo-azul-claro">
+        <h2>Exemplo A</h2>
+        <p>
+            Esta área possui fundo azul claro.
+        </p>
+    </div>
+
+    <div class="exemplo paragrafo-verde-claro">
+        <h2>Exemplo B</h2>
+        <p>
+            Este elemento possui fundo verde claro.
+        </p>
+    </div>
+
+    <div class="exemplo imagem-repetida-fixa">
+        <h2>Exemplo C</h2>
+        <p>
+            A imagem de fundo é repetida e permanece fixa durante
+            o deslocamento da página.
+        </p>
+        <p>
+            Role a página para testar o efeito.
+        </p>
+    </div>
+
+    <div class="exemplo imagem-vertical">
+        <h2>Exemplo D</h2>
+        <p>
+            A imagem é repetida somente na vertical.
+        </p>
+    </div>
+
+    <div class="exemplo imagem-sem-repeticao">
+        <h2>Exemplo E</h2>
+        <p>
+            A imagem aparece apenas uma vez.
+        </p>
+    </div>
+
+    <div class="exemplo imagem-centralizada">
+        <h2>Exemplo F</h2>
+        <p>
+            A imagem aparece uma vez e fica centralizada.
+        </p>
+    </div>
+
+    <div class="exemplo fundo-completo">
+        <h2>Exemplo G</h2>
+        <p>
+            O fundo da área é amarelo, possui uma imagem centralizada,
+            sem repetição, e acompanha o deslocamento da página.
+        </p>
+    </div>
+
+</body>
+</html>
