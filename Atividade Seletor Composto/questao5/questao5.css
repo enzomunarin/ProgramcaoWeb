@@ -1,0 +1,61 @@
+/* Tabela */
+table {
+    width: 700px;
+    margin: 30px auto;
+
+    border: 3px solid green;
+
+    /* Questão solicitada no exercício */
+    border-collapse: collapse;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Título da tabela */
+caption {
+    background-color: yellow;
+    color: green;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    padding: 5px;
+}
+
+/* Cabeçalho */
+th {
+    border: 2px solid #8bc48b;
+    padding: 8px;
+
+    font-size: 18px;
+}
+
+/* Células */
+td {
+    border: 2px solid #8bc48b;
+    padding: 8px;
+
+    text-align: center;
+}
+
+/* Primeira coluna */
+td:first-child {
+    text-align: left;
+}
+
+/* Imagens dos times */
+td img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+/* Efeito roll-over solicitado */
+tr:hover {
+    color: green;
+    background-color: yellow;
+}

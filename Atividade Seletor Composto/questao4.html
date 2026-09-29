@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Página de Seletores de Atributos</title>
+
+    <style>
+
+        /* Possui o atributo title */
+        [title] {
+            border: 4px solid red;
+        }
+
+        /* title exatamente igual a "Página 3" */
+        [title="Página 3"] {
+            color: green;
+        }
+
+        /* title começa com "K19" */
+        [title^="K19"] {
+            padding: 10px;
+            background: yellow;
+        }
+
+        /* title começa com "Link" */
+        [title^="Link"] {
+            margin-right: 30px;
+        }
+
+        /* href termina com "link" */
+        [href$="link"] {
+            outline: 4px solid blue;
+        }
+
+        /* src contém "large" */
+        [src*="large"] {
+            border: 4px solid green;
+        }
+
+        /* href contém "link" */
+        [href*="link"] {
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 title="Página 1">Página 1</h1>
+
+    <h2 title="Página 3">Página 3</h2>
+
+    <p title="K19 - Curso de CSS">
+        Texto com title começando com K19
+    </p>
+
+    <a title="Link para página" href="meulink">
+        Link 1
+    </a>
+
+    <br><br>
+
+    <a title="Outro Link" href="outro-link">
+        Link 2
+    </a>
+
+    <br><br>
+
+    <img
+        src="https://via.placeholder.com/300x150?text=large"
+        alt="Imagem large"
+    >
+
+</body>
+</html>

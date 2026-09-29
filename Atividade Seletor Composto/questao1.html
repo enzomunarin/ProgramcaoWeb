@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1 - Seletores CSS</title>
+
+    <style>
+        /* Primeiro título */
+        h1 {
+            color: black;
+        }
+
+        /* Parágrafo imediatamente depois de um H4 */
+        h4 + p {
+            color: black;
+        }
+
+        /* P imediatamente depois de outro P */
+        p + p {
+            color: blue;
+        }
+
+        /* Título imediatamente depois de um P */
+        p + h4 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Este Título é o primeiro, portanto não é adjacente a nada</h1>
+
+    <div>
+        <h4>Um título H4</h4>
+
+        <p>Parágrafo irmão adjacente a um H4</p>
+
+        <p>Este Parágrafo é irmão adjacente a outro P e fica azul</p>
+
+        <p>Este também</p>
+
+        <h4>Título irmão adjacente a um P e fica vermelho</h4>
+
+        <p>Este Parágrafo é irmão adjacente a um H4</p>
+
+        <p>Este parágrafo está fora da DIV, portanto não é irmão dos acima</p>
+    </div>
+
+    <p>Este parágrafo está fora da DIV.</p>
+
+    <h4>Título fora da DIV, mas adjacente a um P e fica vermelho</h4>
+
+    <h4>Título fora da DIV, mas adjacente a outra H4</h4>
+
+</body>
+</html>

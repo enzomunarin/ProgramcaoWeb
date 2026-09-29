@@ -1,0 +1,48 @@
+/* Todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: #ddd;
+}
+
+/* Div com id conteudo */
+#conteudo {
+    width: 800px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* Elementos com classe cancelado */
+.cancelado {
+    text-decoration: line-through;
+}
+
+/* Lista */
+ul {
+    padding: 0 0 0 40px;
+}
+
+/* Apenas os li da lista principal */
+#conteudo > ul > li {
+    color: blue;
+}
+
+/* Filhos de ul e ul filho de conteúdo */
+#conteudo > ul,
+#conteudo > ul > li {
+    margin: 0 0 20px 0;
+}
+
+/* Parágrafo imediatamente precedido por uma ul */
+ul + p {
+    color: red;
+}
+
+/* Parágrafo precedido por uma ul */
+ul ~ p {
+    font-style: italic;
+}

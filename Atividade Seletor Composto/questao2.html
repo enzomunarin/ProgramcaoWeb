@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 2 - Pseudo-classes</title>
+
+    <style>
+        /* Link 1 - muda de cor */
+        .stl1:hover {
+            color: red;
+        }
+
+        /* Link 2 - muda o tamanho da letra */
+        .stl2:hover {
+            font-size: 25px;
+        }
+
+        /* Link 3 - muda a cor de fundo */
+        .stl3:hover {
+            background-color: yellow;
+        }
+
+        /* Link 4 - muda o tipo de letra */
+        .stl4:hover {
+            font-family: "Courier New", monospace;
+        }
+
+        /* Link 5 - muda a borda */
+        .stl5:hover {
+            border: 2px solid blue;
+        }
+
+        /* Link ainda não visitado */
+        a:link {
+            color: blue;
+        }
+
+        /* Link já visitado */
+        a:visited {
+            color: purple;
+        }
+
+        /* Quando o link está sendo clicado */
+        a:active {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <a class="stl1" href="">Muda de cor</a>
+        <hr>
+
+        <a class="stl2" href="">Muda o tamanho das letras</a>
+        <hr>
+
+        <a class="stl3" href="">Muda a cor de fundo</a>
+        <hr>
+
+        <a class="stl4" href="">Muda o tipo de letra</a>
+        <hr>
+
+        <a class="stl5" href="">Muda a borda</a>
+    </p>
+
+</body>
+</html>
